@@ -11,7 +11,7 @@ function App() {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const newSocket = io('ws://backend-pobvgj2xoq-uc.a.run.app');
+    const newSocket = io('wss://backend-pobvgj2xoq-uc.a.run.app');
     setSocket(newSocket);
 
     return () => {
